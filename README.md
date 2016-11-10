@@ -2,6 +2,8 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
+For stills of the design of this project: [Behance Link](https://www.behance.net/gallery/43870993/When-to-Travel)
+
 As a protoype, this project does not have full functionality, mostly due to the lack of database(s).
 
 **There is no:**
