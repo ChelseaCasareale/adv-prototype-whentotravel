@@ -1,0 +1,65 @@
+<div class="search-rectangle" [ngClass]="{ 'search-box': searching }">
+  <form class="search-inputs" [ngClass]="{'search-form': searching}" [formGroup]="searchForm" (ngSubmit)="submit()">
+    <div class="form-group" [ngClass]="{'search-group': searching}">
+      <label for="city" class="form-label" [ngClass]="{'control-label': searching}" >Travel to</label>
+      <input class="form-control" [ngClass]="{'search-input': searching}" formControlName="travelTo" id="city" type="text" placeholder="Enter a city" required />
+
+      <div *ngIf="!searching">
+        <div *ngIf="formErrors.travelTo" class="alert alert-danger">
+          {{ formErrors.travelTo }}
+        </div>
+      </div>
+    </div>
+    <div *ngIf="searching">
+      <div *ngIf="formErrors.travelTo" class="alert alert-danger">
+        {{ formErrors.travelTo }}
+      </div>
+    </div>
+
+    <div class="form-group" [ngClass]="{'search-group': searching}">
+      <label for="location" class="form-label" [ngClass]="{'control-label': searching}">Travel from</label>
+      <input id="location" class="form-control" [ngClass]="{'search-input': searching}" formControlName="travelFrom" type="text" placeholder="Enter your current city" required />
+
+      <div *ngIf="formErrors.travelFrom" class="alert alert-danger">
+        {{ formErrors.travelFrom }}
+      </div>
+    </div>
+
+    <div class="form-group" [ngClass]="{'search-group': searching}">
+      <label for="month-select" class="form-label" [ngClass]="{'control-label': searching}">Month</label>
+      <select id="month-select" class="form-control" [ngClass]="{'month-select': searching}" formControlName="month">
+        <option value="January" selected>January 2017</option>
+        <option value="February">February 2017</option>
+        <option value="March">March 2017</option>
+        <option value="April">April 2017</option>
+        <option value="May">May 2017</option>
+        <option value="June">June 2017</option>
+        <option value="July">July 2017</option>
+        <option value="August">August 2017</option>
+        <option value="September">September 2017</option>
+        <option value="October">October 2017</option>
+        <option value="November">November 2017</option>
+        <option value="December">December 2017</option>
+      </select>
+
+      <div *ngIf="formErrors.month" class="alert alert-danger">
+        {{ formErrors.month }}
+      </div>
+    </div>
+
+    <button type="submit" formnovalidate>
+      <svg version="1.1" id="search-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 44 22" style="enable-background:new 0 0 44 22;" xml:space="preserve">
+        <style type="text/css">
+        	.st0{fill:#F7F7F7;}
+        </style>
+        <g id="Right_Arrow_1">
+        	<g>
+        		<path class="st0" [ngClass]="{'arrow': searching}" d="M43.7,10.3l-10-10C33.5,0.1,33.3,0,33,0c-0.6,0-1,0.4-1,1c0,0.3,0.1,0.5,0.3,0.7l8.3,8.3H1c-0.6,0-1,0.4-1,1
+        			c0,0.6,0.4,1,1,1h39.6l-8.3,8.3C32.1,20.5,32,20.7,32,21c0,0.6,0.4,1,1,1c0.3,0,0.5-0.1,0.7-0.3l10-10c0.2-0.2,0.3-0.4,0.3-0.7
+        			C44,10.7,43.9,10.5,43.7,10.3z"/>
+        	</g>
+        </g>
+      </svg>
+    </button>
+  </form>
+</div>

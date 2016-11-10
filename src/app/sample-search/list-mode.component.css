@@ -1,0 +1,66 @@
+#list-mode {
+  width: 60%;
+  margin: auto;
+}
+
+.list-date {
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: rgba(21, 149, 255, 0.05);
+  align-content: center;
+}
+
+.month {
+  font-size: 16px;
+  color: #444;
+}
+
+.date {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1595ff;
+}
+
+.price {
+  font-size: 21px;
+  font-weight: 600;
+  color: #103868;
+  line-height: 1.5;
+}
+
+#travel-more {
+  width: 100%;
+  display: block;
+  margin: 20px auto auto;
+  outline: none;
+  border: none;
+  background-color: #1595ff;
+  padding: 15px 0;
+  color: #f7f7f7;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+
+@media(min-width: 769px) {
+  #list-mode { max-width: 550px; }
+
+  .list-date { padding: 10px 30px; }
+
+  .month {
+    font-size: 20px;
+    color: #444;
+  }
+
+  .date {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1595ff;
+  }
+
+  .price { font-size: 24px; }
+}

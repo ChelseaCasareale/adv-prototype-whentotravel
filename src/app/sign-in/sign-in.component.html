@@ -1,0 +1,30 @@
+<div class="container-fluid" id="page">
+  <div id="wrapper" class="container-fluid">
+    <h3 id="sign-in-title" class="text-center">Sign In</h3>
+
+    <form name="signIn" [formGroup]="loginForm" (ngSubmit)="submit()">
+      <div class="form-group">
+        <input class="form-control" formControlName="email" id="email" type="email" placeholder="Email" required>
+        <div *ngIf="formErrors.email" class="alert alert-danger">
+          {{ formErrors.email }}
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input class="form-control" formControlName="password" id="password" type="password" placeholder="Password" required>
+
+        <div *ngIf="formErrors.password" class="alert alert-danger">
+          {{ formErrors.password }}
+        </div>
+      </div>
+    </form>
+
+    <div id="social-media-sign-in">
+      <img routerLink="/404" routerLinkAcitve="active" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/sign-in-fb.jpg" alt="Sign in with Facebook account" />
+      <img routerLink="/404" routerLinkAcitve="active" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/sign-in-google.jpg" alt="Sign in with Google Plus account" />
+    </div>
+  </div>
+  <button id="log-in-btn" type="submit">LOG IN</button>
+
+  <a routerLink="/sign-up" routerLinkActive="active" id="sign-up" class="text-center"><p>Sign Up</p></a>
+</div>

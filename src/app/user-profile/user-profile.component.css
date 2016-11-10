@@ -1,0 +1,149 @@
+#top-half { margin-top: 30px; }
+
+#user-info {
+  background-color: #ccd9e2;
+  padding: 50px;
+}
+
+#user-photo-wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 1px #d8d8d8;
+  display: block;
+  margin: auto;
+}
+
+#user-photo { width: 200px; }
+
+#user-name {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #103868;
+}
+
+#user-data { margin-top: 50px; }
+
+.category {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.user-input {
+  font-weight: 300 !important;
+  margin-left: 1em;
+}
+
+#user-navbar {
+  height: 100px;
+  background-color: #1595ff;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.user-navbar-btn {
+  outline: none;
+  border: none;
+  height: 100px;
+  width: 33.3%;
+  color: #f7f7f7;
+  font-weight: 600;
+  background-color: transparent;
+  border-right: solid .3px #e6e6e6;
+  margin-bottom: 0;
+}
+
+.user-navbar-btn:hover { background-color: #103868; }
+
+.focus { background-color: #103868; }
+
+#page { background-color: rgba(204, 217, 226, 0.11); }
+
+#bottom-half {
+  padding-bottom: 200px;
+  padding-top: 10px;
+}
+
+#options {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+}
+
+#sort { margin-left: 50px; }
+
+#list-display-mode {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.mode {
+  padding: 10px;
+  margin: 0;
+}
+
+.bold { font-weight: 600; }
+
+#map-display { color: #d4d4d4; }
+
+#list-display { color: #1595ff; }
+
+
+
+
+
+
+@media (min-width: 769px) {
+  #user-data {
+    margin-left: 100px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+  #user-data { margin-left: 0; }
+
+  #top-half { position: relative; }
+
+  #user-info {
+    position: absolute;
+    left: 100px;
+  }
+
+  #user-navbar {
+    height: 50px;
+    justify-content: flex-end;
+  }
+
+  .user-navbar-btn {
+    height: 50px;
+    width: 18.6%
+  }
+
+  #bottom-half { margin-left: 450px; }
+
+  #map-display { color: #1595ff; }
+}
+
+
+@media (min-width: 1200px) {
+  .user-navbar-btn { width: 20%; }
+
+  #sort { margin-left: 100px; }
+
+  #list-display-mode { margin-right: 100px; }
+
+  #user-info {
+    position: absolute;
+    left: 150px;
+  }
+}

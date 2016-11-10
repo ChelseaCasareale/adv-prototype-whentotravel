@@ -1,0 +1,28 @@
+#map-mode {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+.sebm-google-map-container {
+  height: 400px;
+}
+
+#top-row {
+  display: flex;
+  flex-flow: row;
+}
+
+#star-rating {
+  margin-left: 20px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+
+.star {
+  margin-top: -2px;
+  margin-left: 2px;
+  width: 14px;
+  height: 14px;
+}

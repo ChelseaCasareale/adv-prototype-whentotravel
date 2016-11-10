@@ -1,0 +1,46 @@
+<div id="top-half">
+  <div id="user-info">
+
+    <div id="user-photo-wrapper">
+      <img id="user-photo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/0806161351a_HDR_(2).jpg" alt="user profile image">
+    </div>
+
+    <h3 id="user-name">Jane Doe</h3>
+
+    <div id="user-data">
+      <h4 class="category">Location: <span class="user-input">St. Louis, MO</span></h4>
+      <h4 class="category">Visited: <span class="user-input">15 cities, 5 countries</span></h4>
+      <h4 class="category">Ratings: <span class="user-input">40</span></h4>
+      <h4 class="category">Favorite City: <span class="user-input">New York, NY</span></h4>
+      <h4 class="category">Favorite Country: <span class="user-input">Thailand</span></h4>
+    </div>
+  </div>
+
+  <div id=page>
+    <div id="user-navbar">
+      <button class="user-navbar-btn focus">VISITED</button>
+      <button routerLink="/404" routerLinkAcitve="active" class="user-navbar-btn">RATINGS</button>
+      <button routerLink="/404" routerLinkAcitve="active" class="user-navbar-btn">WISHLIST</button>
+    </div>
+
+    <div id="bottom-half">
+      <div id="options">
+        <select id="sort">
+          <option>Month</option>
+          <option>Rating (High to low)</option>
+          <option>Alphabetical</option>
+        </select>
+
+        <div id="list-display-mode">
+          <h5 id="map-display" class="mode" [style.font-weight]="!listMode ? '600' : '400'" (click)="mapMode()">Map</h5>
+          <h5 id="list-display" class="mode" [style.font-weight]="listMode ? '600' : '400'" (click)="listModeOn()">List</h5>
+        </div>
+      </div>
+
+      <user-list *ngIf="listMode"></user-list>
+
+      <map-mode *ngIf="!mobile && !listMode"></map-mode>
+
+    </div>
+  </div>
+</div>

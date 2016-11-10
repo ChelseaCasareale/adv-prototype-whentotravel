@@ -1,0 +1,32 @@
+<div id="header" [ngClass]="{'landing-page': home}">
+
+  <div *ngIf="!home">
+    <img id="search" *ngIf="!searchMode" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/search.svg" alt="search" (click)="toggleSearch()">
+
+    <button *ngIf="searchMode" (click)="toggleSearch()">
+      <span id="search" class="glyphicon glyphicon-remove"></span>
+    </button>
+  </div>
+
+  <div class="nav-button-container" (click)="openMenu()">
+      <span [ngClass]="{'glyphicon-menu-hamburger': !menuDisplay, 'glyphicon-remove': menuDisplay}" class="nav-button glyphicon"></span>
+  </div>
+
+  <div id="nav-link-list" [ngClass]="{'no-display': !menuDisplay}">
+    <div class="nav-link">
+      <a (click)="route()"><p>{{link}}</p></a>
+    </div>
+
+    <div class="nav-link">
+      <a routerLink="/search-results" routerlinkActive="active" (click)="onClick()"><p>Sample search</p></a>
+    </div>
+
+    <div class="nav-link">
+      <a routerLink="/user-profile" routerLinkActive="active" (click)="onClick()"><p>Sample user</p></a>
+    </div>
+  </div>
+</div>
+
+<search-form [searchMode]="searchMode" *ngIf="searchMode"></search-form>
+
+<router-outlet ></router-outlet>

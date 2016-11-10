@@ -1,0 +1,59 @@
+{
+  "data": {
+    "topFive": [
+      {
+        "location": "New York, NY",
+        "starRating": 4.5,
+        "month": "December"
+      },
+      {
+        "location": "Paris, France",
+        "starRating": 4.5,
+        "month": "June"
+      },
+      {
+        "location": "New York, NY",
+        "starRating": 4.5,
+        "month": "March"
+      },
+      {
+        "location": "Cuzco, Peru",
+        "starRating": 4.5,
+        "month": "May"
+      },
+      {
+        "location": "Nice, France",
+        "starRating": 4.5,
+        "month": "August"
+      }
+    ],
+
+    "bottomFive": [
+      {
+        "location": "Aruba",
+        "starRating": 4.5,
+        "month": "December"
+      },
+      {
+        "location": "Turks and Caicos",
+        "starRating": 4.5,
+        "month": "December"
+      },
+      {
+        "location": "Vail, CO",
+        "starRating": 4.5,
+        "month": "January"
+      },
+      {
+        "location": "Munich, Germany",
+        "starRating": 4.5,
+        "month": "October"
+      },
+      {
+        "location": "Copenhagen, Denmark",
+        "starRating": 4.5,
+        "month": "August"
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+<div id="title-div" (window:resize)="onResize($event)">
+
+  <h1 class="text-center" id="city">New York, NY</h1>
+  <h2 class="text-center" id="month">January</h2>
+
+  <div id="rating-info">
+    <div id="stars">
+      <svg class="star" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 16.4" style="enable-background:new 0 0 16.1 16.4;">
+        <style type="text/css">
+          .st0{fill:#FFFFFF;}
+        </style>
+        <polygon class="st0" points="8,0 5.7,5.8 0,6 4.6,9.8 2.4,16.4 8,12.4 13.7,16.4 11.6,9.9 16.1,6 9.8,5.8 "/>
+      </svg>
+      <svg class="star" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.1 16.4" style="enable-background:new 0 0 16.1 16.4;" xml:space="preserve">
+        <style type="text/css">
+          .st0{fill:#F7B617;}
+        </style>
+        <polygon class="st0" points="8,0 5.7,5.8 0,6 4.6,9.8 2.4,16.4 8,12.4 13.7,16.4 11.6,9.9 16.1,6 9.8,5.8 "/>
+      </svg>
+      <svg class="star" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.1 16.4" style="enable-background:new 0 0 16.1 16.4;" xml:space="preserve">
+        <style type="text/css">
+          .st0{fill:#F7B617;}
+        </style>
+        <polygon class="st0" points="8,0 5.7,5.8 0,6 4.6,9.8 2.4,16.4 8,12.4 13.7,16.4 11.6,9.9 16.1,6 9.8,5.8 "/>
+      </svg>
+      <svg class="star" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.1 16.4" style="enable-background:new 0 0 16.1 16.4;" xml:space="preserve">
+        <style type="text/css">
+          .st0{fill:#F7B617;}
+        </style>
+        <polygon class="st0" points="8,0 5.7,5.8 0,6 4.6,9.8 2.4,16.4 8,12.4 13.7,16.4 11.6,9.9 16.1,6 9.8,5.8 "/>
+      </svg>
+      <svg class="star white-star" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.1 16.4" style="enable-background:new 0 0 16.1 16.4;" xml:space="preserve">
+        <style type="text/css">
+          .st1{fill: #FFFFFF;}
+        </style>
+        <polygon class="st1" points="8,0 5.7,5.8 0,6 4.6,9.8 2.4,16.4 8,12.4 13.7,16.4 11.6,9.9 16.1,6 9.8,5.8 "/>
+      </svg>
+    </div>
+    <p>500 have been</p>
+    <p>300 would like to go</p>
+  </div>
+
+</div>
+
+<div class="section">
+
+  <h1 class="div-title">Weather</h1>
+  <img class="yellow-line" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/yellow-line-front-page.svg" alt="decorative yellow line"/>
+
+  <div id="wrapper">
+
+    <div id="weather-data-div">
+      <div id="data-div" class="text-center">
+        <div class="data">
+          <h2 class="weather-data" (click)="toggleFormat()">{{temperature | temp:format}}</h2>
+          <h4 class="data-name">Temperature</h4>
+        </div>
+
+        <div class="data" id="precip-div">
+          <h2 class="weather-data" (click)="toggleFormat()">{{precipitation | length:format}}</h2>
+          <h4 class="data-name">Precipitation</h4>
+        </div>
+
+        <div class="data">
+          <h2 class="weather-data" (click)="toggleFormat()">{{snowfall | length:format}}</h2>
+          <h4 class="data-name">Snowfall</h4>
+        </div>
+      </div>
+
+      <div id="words-div">
+        <p>New York, NY lies in a warm temperate climate zone. Winters are cold, though infrequently below 0 &deg;F. Snowfall is fairly common, although it should be noted that amounts can vary even throughout the city.</p>
+      </div>
+    </div>
+
+    <div id="packing-div">
+      <h4 id="packing-title" class="text-center">Packing Guide</h4>
+      <div class="packing">
+        <img class="packing-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/winter-coat.svg" alt="winter coat"/>
+        <h5 class="packing-desc">Winter clothing</h5>
+      </div>
+
+      <div class="packing">
+        <img class="packing-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/winter-mit.svg" alt="winter mitts">
+        <h5 class="packing-desc">Winter accessories</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<svg version="1.1" class="grey-line" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 954 1" style="enable-background:new 0 0 954 1;" xml:space="preserve">
+  <style type="text/css">
+    .st2{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+  </style>
+  <line class="st2" x1="0.2" y1="0.5" x2="954.2" y2="0.5"/>
+</svg>
+
+
+<div class="section">
+  <h1 class="div-title">Events in January</h1>
+  <img class="yellow-line" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/yellow-line-front-page.svg" alt="decorative yellow line"/>
+
+  <div id="events-wrapper" class="text-center">
+    <div class="event" id="event-1">
+      <div class="caption">
+        <h3 class="caption-title">New Year's Ball Drop</h3>
+        <h4 class="caption-date">1/1</h4>
+      </div>
+    </div>
+
+    <div class="event" id="event-2">
+      <div class="caption">
+        <h3 class="caption-title">Coney Island Polar Plunge</h3>
+        <h4 class="caption-date">1/1</h4>
+      </div>
+    </div>
+
+    <div class="event" id="event-3">
+      <div class="caption">
+        <h3 class="caption-title">Tree at Rockefeller Center</h3>
+        <h4 class="caption-date">1/1</h4>
+      </div>
+    </div>
+
+    <button id="more-button">MORE</button>
+  </div>
+</div>
+
+<svg version="1.1" class="grey-line" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 954 1" style="enable-background:new 0 0 954 1;" xml:space="preserve">
+  <style type="text/css">
+    .st2{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+  </style>
+  <line class="st2" x1="0.2" y1="0.5" x2="954.2" y2="0.5"/>
+</svg>
+
+<div class="section">
+  <h1 class="div-title">Travel</h1>
+  <img class="yellow-line" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/732717/yellow-line-front-page.svg" alt="decorative yellow line"/>
+
+  <h3 id="travel-subheading">Cheapest Round Trip Tickets</h3>
+
+  <div id="list-display-mode">
+    <h5 id="calendar-display" class="mode" [style.font-weight]="!listMode ? '600' : '400'" (click)="calendarMode()">Calendar</h5>
+    <h5 id="list-display" class="mode" [style.font-weight]="listMode ? '600' : '400'" (click)="listModeOn()">List</h5>
+  </div>
+
+  <list-mode *ngIf="listMode"></list-mode>
+
+  <calendar-mode *ngIf="!mobile && !listMode"></calendar-mode>
+
+  <h4 id="skyscanner-credit">Powered by SkyScanner</h4>
+</div>
