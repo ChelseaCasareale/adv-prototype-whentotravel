@@ -1,5 +1,7 @@
-# This site is now live thanks to Surge (and with a great URL name thanks to Surge to boot)
+# This site is now live via Surge (and with a great URL name thanks to Surge to boot)
 [Link](http://spiritual-kitten.surge.sh/)
+
+But feel free to clone and run locally if you'd like.
 
 
 # Advanced Prototype for "When to Travel" personal project
