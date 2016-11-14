@@ -4,6 +4,10 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 For stills of the design of this project: [Behance Link](https://www.behance.net/gallery/43870993/When-to-Travel)
 
+## THIS PROJECT IS LIVE USING SURGE
+[SURGE LINK](http://craven-board.surge.sh/)
+
+
 As a protoype, this project does not have full functionality, mostly due to the lack of database(s).
 
 **There is no:**
