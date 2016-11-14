@@ -5,6 +5,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from './shared.module';
 
 import { BadEmailDirective } from './bad-email.directive';
+import { EqualValidator } from './confirmPassword.directive';
 
 import { SignInComponent } from '../sign-in/sign-in.component';
 import { SignUpComponent } from '../sign-up/sign-up.component';
@@ -14,7 +15,8 @@ import { SignUpComponent } from '../sign-up/sign-up.component';
   declarations: [
     BadEmailDirective,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    EqualValidator
    ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { SignUpComponent } from '../sign-up/sign-up.component';
   exports: [
     BadEmailDirective,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    EqualValidator
   ]
 })
 export class SignUpOrInModule { }
