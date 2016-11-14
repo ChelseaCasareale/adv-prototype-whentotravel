@@ -33,7 +33,7 @@
 
       <div class="flex-row">
         <div class="form-group">
-          <label for="password" class="form-label">PASSWORD <span id="password-span"> hint: it's 'password'</span></label>
+          <label for="password" class="form-label">PASSWORD <span id="password-span"> hint: min of 8 characters</span></label>
           <input class="form-control" id="password" type="password" formControlName="password" required>
 
           <div *ngIf="formErrors.password" class="alert alert-danger">
@@ -43,7 +43,7 @@
 
         <div class="form-group">
           <label for="confirm" class="form-label">CONFIRM PASSWORD</label>
-          <input class="form-control" id="confirm" type="password" formControlName="confirmPassword" required>
+          <input class="form-control" id="confirm" type="password" formControlName="confirmPassword" validateEqual="password" required>
 
           <div *ngIf="formErrors.confirmPassword" class="alert alert-danger">
             {{ formErrors.confirmPassword }}

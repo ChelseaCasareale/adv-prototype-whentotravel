@@ -1,19 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder, Validators, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { badEmailValidator } from '../shared/bad-email.directive';
 import { SignUp } from '../model/sign-up';
-
-function duplicatePassword(input: FormControl) {
-
-  if (!input.root.controls) {
-    return null;
-  }
-
-  const exactMatch = input.root.controls.password.value === input.value;
-  return exactMatch ? null : { mismatchedPassword: true };
-}
 
 
 @Component({
@@ -65,8 +55,6 @@ export class SignUpComponent implements OnInit{
       ],
       'confirmPassword': [this.signUp.confirmPassword, [
           Validators.required,
-          // matchingPasswordValidator('password')
-          duplicatePassword
         ]
       ]
     });
@@ -133,7 +121,7 @@ export class SignUpComponent implements OnInit{
     },
     'confirmPassword': {
       'required': 'Field is required.',
-      'mismatchedPassword': 'Your passwords do not match'
+      'validateEqual': 'Your passwords do not match'
     }
   };
 
