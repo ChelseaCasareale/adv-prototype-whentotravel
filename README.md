@@ -1,3 +1,7 @@
+# This site is now live thanks to Surge (and with a great URL name thanks to Surge to boot)
+[Link](http://spiritual-kitten.surge.sh/)
+
+
 # Advanced Prototype for "When to Travel" personal project
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
